@@ -1,0 +1,42 @@
+header {
+	margin: 20px 0px;
+}
+
+.nav-holder {
+	text-align: center;
+}
+
+nav ul li {
+	display: inline;
+	margin: 20px;
+}
+
+.section-title {
+	margin: 0px 0px;
+}
+
+.section-title h2 {
+	font-size: 35px;
+	margin-bottom: 0px;
+}
+
+.section-sub-title {
+	margin: 0px 0px 20px 0px;
+}
+
+.section-sub-title h3 {
+	font-size: 24px;
+}
+
+.section-content p {
+	font-size: 16px;
+}
+
+.section {
+	margin: 32px;
+}
+
+.project-thumbnail {
+	margin: 10px 0px;
+}
+
