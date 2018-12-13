@@ -8,14 +8,18 @@
   <link rel="stylesheet" href="css/styles.css?v=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 </head>
 <body>
 <div class="content">
     <section class="main-title">
         <div class="jumbotron jumbotron-fluid">
-            <div class="container">
+            <div class="container title-holder">
                 <h1 class="title-text">I'm James</h1>
                 <h4>Designer, Developer, Marketer</h4>
+            </div>
+            <div calsss="headshot">
+                <img src="images/head-shot.png">
             </div>
         </div>
     </section>
@@ -33,22 +37,22 @@
         </div>
     </section>
     <section class="skills-section">
-        <div class="continer-fluid">
+        <div class="container">
             <div class="row align-items-end">
                 <div class="col-md-4 col-sm-12 skills-left">
                     <div class="skills">
                         <div class="continer">
                             <div class="row">
-                                <div class="col-md-6">
-                                    <h4 class="skills-title">Designer</h4>
-                                    <ul>
-                                        <li>Website design</li>
-                                        <li>UI/UX Design</li>
-                                        <li>Photoshop</li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-6">
-                                    <p>Image Placeholder</p>
+                                <div class="col">
+                                    <div class="list-header-box">
+                                        <i class="fas fa-pencil-alt fa-2x"></i>
+                                        <h4 class="skills-title">Designer</h4>
+                                    </div>
+                                    <hr>
+                                    <div class="list-box">
+                                        <p>Website design</p>
+                                        <p>Photoshop</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -58,16 +62,16 @@
                     <div class="skills">
                         <div class="continer">
                             <div class="row">
-                                <div class="col-md-6">
-                                    <h4 class="skills-title">Developer</h4>
-                                    <ul>
-                                        <li>HTML</li>
-                                        <li>CSS</li>
-                                        <li>JavaScript</li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-6">
-                                    <p>Image Placeholder</p>
+                                <div class="col">
+                                    <div class="list-header-box">
+                                        <i class="fas fa-code fa-2x"></i>
+                                        <h4 class="skills-title">Developer</h4>
+                                    </div>
+                                    <hr>
+                                    <div class="list-box">
+                                        <p>JavaScript</p>
+                                        <p>JQuery</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -77,16 +81,16 @@
                     <div class="skills">
                         <div class="continer">
                             <div class="row">
-                                <div class="col-md-6">
-                                    <h4 class="skills-title">Marketer</h4>
-                                    <ul>
-                                        <li>Pay Per Click</li>
-                                        <li>Google Search</li>
-                                        <li>Google Display</li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-6">
-                                    <p>Image Placeholder</p>
+                                <div class="col">
+                                    <div class="list-header-box">
+                                        <i class="fab fa-google fa-2x"></i>
+                                        <h4 class="skills-title">Marketer</h4>
+                                    </div>
+                                    <hr>
+                                    <div class="list-box">
+                                        <p>AdWords Search</p>
+                                        <p>AdWords Display</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -110,14 +114,14 @@
                     <div class="content-wrap">
                         <div class="hover-content">
                             <div class="row align-items-center">
-                                <div class="col-sm-6">
-                                    <h4>Job 1</h4>
-                                    <p>Small Info About Job</p>
-                                </div>
-                                <div class="col-sm-4 offset-sm-1">
-                                    <div class="button-holder">
-                                        <button type="button" class="btn btn-primary">Learn More</button>
+                                <div class="col-sm-12">
+                                    <div class="project-image">
+                                        <img src="images/poke-shack.jpg">
                                     </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <h4>Poke-Shack</h4>
+                                    <p>Website Design for local Poke restaurant with the added feature of online ordering.</p>
                                 </div>
                             </div>
                         </div>
@@ -127,14 +131,14 @@
                     <div class="content-wrap">
                         <div class="hover-content">
                             <div class="row align-items-center">
-                                <div class="col-sm-6">
-                                    <h4>Job 1</h4>
-                                    <p>Small Info About Job</p>
-                                </div>
-                                <div class="col-sm-4 offset-sm-1">
-                                    <div class="button-holder">
-                                        <button type="button" class="btn btn-primary">Learn More</button>
+                                <div class="col-sm-12">
+                                    <div class="project-image">
+                                        <img src="images/fantasy-helper.jpg">
                                     </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <h4>Fantasy Football Helper</h4>
+                                    <p>Personal project made using JacScript and JQuery.</p>
                                 </div>
                             </div>
                         </div>
@@ -144,67 +148,14 @@
                     <div class="content-wrap">
                         <div class="hover-content">
                             <div class="row align-items-center">
-                                <div class="col-sm-6">
-                                    <h4>Job 1</h4>
-                                    <p>Small Info About Job</p>
-                                </div>
-                                <div class="col-sm-4 offset-sm-1">
-                                    <div class="button-holder">
-                                        <button type="button" class="btn btn-primary">Learn More</button>
+                                <div class="col-sm-12">
+                                    <div class="project-image">
+                                        <img src="images/hvac-card.jpg">
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="content-wrap">
-                        <div class="hover-content">
-                            <div class="row align-items-center">
-                                <div class="col-sm-6">
-                                    <h4>Job 1</h4>
-                                    <p>Small Info About Job</p>
-                                </div>
-                                <div class="col-sm-4 offset-sm-1">
-                                    <div class="button-holder">
-                                        <button type="button" class="btn btn-primary">Learn More</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="content-wrap">
-                        <div class="hover-content">
-                            <div class="row align-items-center">
-                                <div class="col-sm-6">
-                                    <h4>Job 1</h4>
-                                    <p>Small Info About Job</p>
-                                </div>
-                                <div class="col-sm-4 offset-sm-1">
-                                    <div class="button-holder">
-                                        <button type="button" class="btn btn-primary">Learn More</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="content-wrap">
-                        <div class="hover-content">
-                            <div class="row align-items-center">
-                                <div class="col-sm-6">
-                                    <h4>Job 1</h4>
-                                    <p>Small Info About Job</p>
-                                </div>
-                                <div class="col-sm-4 offset-sm-1">
-                                    <div class="button-holder">
-                                        <button type="button" class="btn btn-primary">Learn More</button>
-                                    </div>
+                                <div class="col-sm-12">
+                                    <h4>Gift Card/Coupon Card</h4>
+                                    <p>Custom designed printed gift card/coupon card for a local HVAC Company.</p>
                                 </div>
                             </div>
                         </div>
