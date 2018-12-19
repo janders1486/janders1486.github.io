@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="fantasy.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+        <script src="teams.js"></script>
+        <script src="schedule.js"></script>
+    </head>
+    <body>
+        <div class="wrapper center-block">
+            <h1 class="text-center">Fantasy Football Match-Up Factor</h1>
+            <div class="explanation-text text-center">
+                <p>This site is is intended to take some of the guess work out of who you should.
+                It takes into consideration multiple factors including: The defensive matchup,
+                the weather forcast, any injuries, and outside factors like if the team is
+                a running back by comitee or not.</p>
+                <p>The biggest factor in all of this will be the defensive mathup. The defensive 
+                matchup takes into consideration multiple factors such as the defensive teams yards
+                allowed per game, touchdowns allowed per game, interceptions per game to name a few.</p>
+                <p>To use this put in the two players that you are unsure about
+                including the positions they play and the teams they play for. This will give you a "start rating"
+                the higher the rating the better option they are. This will also include stats about the defenses
+                they play. Again this is just a guide to help make a decision and is in no way a definative
+                answer to the best player. In the end you should make the decision on your won.</p>
+            </div>
+            <br>
+            <form class="playerForm text-center">
+                <input type="text" name="playerName" class="playerInfo" placeholder="Players Name">
+                <select name="playerPosition" class="playerInfo">
+                    <option value="QB">QB</option>
+                    <option value="RB">RB</option>
+                    <option value="WR">WR</option>
+                    <option value="TE">TE</option>
+                </select> 
+                <select name="team" class="playerInfo" id="oppTeams">
+                </select>
+                <input type="submit" value="submit">
+            </form>
+            <div class="container-fluid">
+                <div class="row playerDisplay">
+                    <div id="QB" class="statField row">
+                        <div class='col-xs-12 col-sm-6 col-lg-8 player sectionSplit' id="QB1"></div>
+                        <div class='col-xs-12 col-sm-6 col-lg-8 player' id="QB2"></div>
+                    </div>
+                    <div id="RB" class="statField row">
+                        <div class='col-xs-12 col-sm-6 player sectionSplit' id="RB1"></div>
+                        <div class='col-xs-12 col-sm-6 player' id="RB2"></div>
+                    </div>
+                    <div id="WR" class="statField row">
+                        <div class='col-xs-12 col-sm-6 player sectionSplit' id="WR1"></div>
+                        <div class='col-xs-12 col-sm-6 player' id="WR2"></div>
+                    </div>
+                    <div id="TE" class="statField row">
+                        <div class='col-xs-12 col-sm-6 player sectionSplit' id="TE1"></div>
+                        <div class='col-xs-12 col-sm-6 player' id="TE2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+        <script src="FantasyPlayerRank.js"></script>
+    </body>
+</html>
